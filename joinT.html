@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Join Telecart</title>
+
+<style>
+  :root{
+    --primary:#0f6fbf;
+    --accent:#f6a623;
+    --bg:#f7f9fc;
+    --card:#fff;
+    --muted:#6b7280;
+  }
+
+  body{
+    margin:0;
+    font-family:Inter, sans-serif;
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+  }
+
+  .card{
+    background:var(--card);
+    width:100%;
+    max-width:420px;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  h2{
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:14px;
+    font-size:22px;
+  }
+
+  input, select{
+    width:100%;
+    padding:12px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    margin-bottom:14px;
+    font-size:14px;
+  }
+
+  button{
+    width:100%;
+    padding:12px;
+    background:var(--accent);
+    color:#fff;
+    font-weight:700;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    margin-top:6px;
+  }
+  button:hover{opacity:0.92}
+
+  .link{
+    text-align:center;
+    margin-top:12px;
+    font-size:14px;
+  }
+  .link a{color:var(--primary);text-decoration:none;font-weight:600}
+</style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Join Telecart</h2>
+
+    <form onsubmit="event.preventDefault(); alert('Account Created (Demo)');">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Create Password" required>
+
+      <select required>
+        <option value="">Select Account Type</option>
+        <option>Parcel Sender</option>
+        <option>Carrier</option>
+      </select>
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <div class="link">
+      Already have an account? <a href="loginpage.html">Login</a>
+    </div>
+  </div>
+</body>
+</html>

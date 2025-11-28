@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Carrier – Telekart</title>
+
+  <style>
+    :root {
+      --primary: #0f6fbf;   /* Blue */
+      --accent: #f2b632;    /* Gold */
+      --dark: #0d1b2a;
+      --light: #f5f9ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--light);
+    }
+
+    .header {
+      background: var(--primary);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 450px;
+      margin: 40px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #444;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: var(--dark);
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: var(--primary);
+      border: none;
+      color: white;
+      font-size: 17px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0c5c9c;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">TELEKART — Become a Carrier</div>
+
+  <div class="container">
+    <h2>Start Earning with Telekart</h2>
+    <p>Deliver parcels in your free time and earn money.  
+       Join Telekart as an official carrier.</p>
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name" required />
+
+    <label>Phone Number</label>
+    <input type="number" placeholder="Enter your phone number" required />
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Enter your email" />
+
+    <label>Select Vehicle Type</label>
+    <select>
+      <option value="">Choose vehicle</option>
+      <option>Motorcycle</option>
+      <option>Scooter</option>
+      <option>Car</option>
+      <option>Mini Van</option>
+    </select>
+
+    <label>Driving License Number</label>
+    <input type="text" placeholder="Enter your license number" />
+
+    <label>City / Location</label>
+    <input type="text" placeholder="Enter your city" />
+
+    <button>Apply Now</button>
+
+    <p class="note">
+      Already have an account? <a href="loginpage.html">Login</a>
+    </p>
+  </div>
+
+</body>
+</html>

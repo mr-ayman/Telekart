@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telecart – Login</title>
+
+<style>
+  :root{
+    --primary:#0f6fbf;
+    --accent:#f6a623;
+    --bg:#f7f9fc;
+    --card:#fff;
+    --muted:#6b7280;
+  }
+
+  body{
+    margin:0;
+    font-family:Inter, sans-serif;
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+  }
+
+  .card{
+    background:var(--card);
+    width:100%;
+    max-width:380px;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  h2{
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:16px;
+    font-size:22px;
+  }
+
+  input{
+    width:100%;
+    padding:12px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    margin-bottom:14px;
+    font-size:14px;
+  }
+
+  button{
+    width:100%;
+    padding:12px;
+    background:var(--primary);
+    color:#fff;
+    font-weight:700;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    margin-top:6px;
+  }
+
+  button:hover{opacity:0.9}
+
+  .link{
+    text-align:center;
+    margin-top:12px;
+    font-size:14px;
+  }
+  .link a{color:var(--primary);text-decoration:none;font-weight:600}
+</style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Login to Telecart</h2>
+
+    <form onsubmit="event.preventDefault(); alert('Logged in (Demo)');">
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="link">
+      New here? <a href="joinT.html">Join Telecart</a>
+    </div>
+  </div>
+</body>
+</html>
